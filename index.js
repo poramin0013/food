@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended:false}))
 
 
 //router
-app.use('/api',restaurantRouter);
+app.use('/',restaurantRouter);
 
 
 app.listen(3000,()=>{

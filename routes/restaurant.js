@@ -4,12 +4,12 @@ const restaurants = require('../data');
 
 
 //http://localhost:3000/api
-router.get('/',(req,res) => {
+/*router.get('/',(req,res) => {
     res.send('<h1> Hello Restaurant API</h1>');
-});
+});*/
 
 //http://localhost:3000/api/restaurant
-router.get("/restaurant",(req,res) =>{
+router.get("/",(req,res) =>{
     //res.json(restaurants);
     res.render('index',{restaurants});
 });
