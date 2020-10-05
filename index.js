@@ -28,6 +28,11 @@ app.use(express.urlencoded({extended:false}))
 app.use('/',restaurantRouter);
 
 
-app.listen(3000,()=>{
-    console.log('Listening to port 3000');
-});
+const PORT = process.env.PORT || 8080;
+
+app.listen(
+  PORT,
+  () => {
+    console.log(`Listening to port ${PORT}`);
+  }
+);
